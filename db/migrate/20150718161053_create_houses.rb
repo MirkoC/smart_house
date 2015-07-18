@@ -7,7 +7,7 @@ class CreateHouses < ActiveRecord::Migration
       t.string :state
       t.string :country
       t.string :postal_code
-      t.string :ovner
+      t.string :owner
 
       t.timestamps null: false
     end
