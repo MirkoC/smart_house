@@ -1,0 +1,26 @@
+<table class="table table-hover">
+  <tr>
+    <th>Name</th>
+    <th>Street address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Region</th>
+    <th>Country</th>
+    <th>Postal code</th>
+  </tr>
+
+  <% @houses.each do |house| %>
+      <tr>
+        <td><%= house.name %></td>
+        <td><%= house.street_address %></td>
+        <td><%= house.city %></td>
+        <td><%= house.state %></td>
+        <td><%= house.country %></td>
+        <td><%= house.postal_code %></td>
+        <td><%= house.owner %></td>
+        <td><%=link_to 'Details', house_path(house), class: 'btn btn-info btn-xs' %></td>
+        <td><%=link_to 'Edit', edit_house_path(house), class: 'btn btn-warning btn-xs' %></td>
+        <td><%=link_to 'Delete', house_path(house), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
+      </tr>
+  <% end %>
+</table>

@@ -1,0 +1,40 @@
+<%= form_for @house do |h| %>
+    <p>
+      <%= h.label :name %><br>
+      <%= h.text_field :name, class: 'form-control' %>
+    </p>
+
+    <p>
+      <%= h.label :street_address %><br>
+      <%= h.text_field :street_address, class: 'form-control' %>
+    </p>
+
+    <p>
+      <%= h.label :city %><br>
+      <%= h.text_field :city, class: 'form-control' %>
+    </p>
+
+    <p>
+      <%= h.label :state %><br>
+      <%= h.text_field :state, class: 'form-control' %>
+    </p>
+
+    <p>
+      <%= h.label :country %><br>
+      <%= h.text_field :country, class: 'form-control' %>
+    </p>
+
+    <p>
+      <%= h.label :postal_code %><br>
+      <%= h.text_field :postal_code, class: 'form-control' %>
+    </p>
+
+    <p>
+      <%= h.label :owner %><br>
+      <%= h.text_field :owner, class: 'form-control' %>
+    </p>
+
+    <p>
+      <%= h.submit 'Save', class: 'btn btn-primary' %>
+    </p>
+<% end %>
