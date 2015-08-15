@@ -1260,3 +1260,242 @@ Processing by HousesController#index as HTML
   [1m[35mHouse Load (0.4ms)[0m  SELECT "houses".* FROM "houses"
   Rendered houses/index.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses" for 127.0.0.1 at 2015-08-15 20:40:21 +0200
+Processing by HousesController#index as HTML
+  [1m[36mHouse Load (0.2ms)[0m  [1mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/mirko/Posao/SideJobs/smart_house/app/assets/images
+  /home/mirko/Posao/SideJobs/smart_house/app/assets/javascripts
+  /home/mirko/Posao/SideJobs/smart_house/app/assets/stylesheets
+  /home/mirko/Posao/SideJobs/smart_house/vendor/assets/javascripts
+  /home/mirko/Posao/SideJobs/smart_house/vendor/assets/stylesheets
+  /var/lib/gems/2.1.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /var/lib/gems/2.1.0/gems/jquery-rails-4.0.4/vendor/assets/javascripts
+  /var/lib/gems/2.1.0/gems/coffee-rails-4.1.0/lib/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>SmartHouse</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:17
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4125021840945108007_44524220'
+
+
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (8.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (18.6ms)
+
+
+Started GET "/houses" for 127.0.0.1 at 2015-08-15 20:40:58 +0200
+Processing by HousesController#index as HTML
+  [1m[35mHouse Load (0.2ms)[0m  SELECT "houses".* FROM "houses"
+  Rendered houses/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/mirko/Posao/SideJobs/smart_house/app/assets/images
+  /home/mirko/Posao/SideJobs/smart_house/app/assets/javascripts
+  /home/mirko/Posao/SideJobs/smart_house/app/assets/stylesheets
+  /home/mirko/Posao/SideJobs/smart_house/vendor/assets/javascripts
+  /home/mirko/Posao/SideJobs/smart_house/vendor/assets/stylesheets
+  /var/lib/gems/2.1.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /var/lib/gems/2.1.0/gems/jquery-rails-4.0.4/vendor/assets/javascripts
+  /var/lib/gems/2.1.0/gems/coffee-rails-4.1.0/lib/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>SmartHouse</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:15
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4125021840945108007_44524220'
+
+
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (8.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (18.5ms)
+
+
+Started GET "/houses" for 127.0.0.1 at 2015-08-15 20:42:14 +0200
+Processing by HousesController#index as HTML
+  [1m[36mHouse Load (0.2ms)[0m  [1mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/mirko/Posao/SideJobs/smart_house/app/assets/images
+  /home/mirko/Posao/SideJobs/smart_house/app/assets/javascripts
+  /home/mirko/Posao/SideJobs/smart_house/app/assets/stylesheets
+  /home/mirko/Posao/SideJobs/smart_house/vendor/assets/javascripts
+  /home/mirko/Posao/SideJobs/smart_house/vendor/assets/stylesheets
+  /var/lib/gems/2.1.0/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /var/lib/gems/2.1.0/gems/jquery-rails-4.0.4/vendor/assets/javascripts
+  /var/lib/gems/2.1.0/gems/coffee-rails-4.1.0/lib/assets/javascripts):
+    2: <html>
+    3: <head>
+    4:   <title>SmartHouse</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:15
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4125021840945108007_44524220'
+
+
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mirko/.gem/ruby/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (8.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (18.9ms)
+
+
+Started GET "/houses" for 127.0.0.1 at 2015-08-15 20:42:21 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HousesController#index as HTML
+  [1m[35mHouse Load (0.4ms)[0m  SELECT "houses".* FROM "houses"
+  Rendered houses/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 2628ms (Views: 2616.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-db5915e56595baefd00fd03dd4bdc25367d82425f0b8ad19f2bcc77702206d19.css?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/house.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-08-15 20:42:24 +0200
+
+
+Started GET "/houses/4" for 127.0.0.1 at 2015-08-15 20:42:31 +0200
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (0.3ms)[0m  [1mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered houses/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 48.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses/4/edit" for 127.0.0.1 at 2015-08-15 20:42:33 +0200
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mHouse Load (0.3ms)[0m  SELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered houses/_form.html.erb (10.7ms)
+  Rendered houses/edit.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/3/edit" for 127.0.0.1 at 2015-08-15 20:42:44 +0200
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHouse Load (0.3ms)[0m  [1mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered houses/_form.html.erb (2.0ms)
+  Rendered houses/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/houses/3" for 127.0.0.1 at 2015-08-15 20:42:49 +0200
+Processing by HousesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NbzyvQQP3+G0Wxz1aj10WbfBBNmbqNGL01+cahgPd8vnzcMeFamcOf2WOmePbik12DlZYrY6QFFrI5wwfQzTLQ==", "house"=>{"name"=>"Pešin stan", "street_address"=>"Horvati 22", "city"=>"Zagreb", "state"=>"Grad Zagreb", "country"=>"Hrvatska", "postal_code"=>"10000", "owner"=>"Boris Peša"}, "commit"=>"Save", "id"=>"3"}
+  [1m[35mHouse Load (0.4ms)[0m  SELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "houses" SET "name" = $1, "updated_at" = $2 WHERE "houses"."id" = $3  [["name", "Pešin stan"], ["updated_at", "2015-08-15 18:42:49.810481"], ["id", 3]]
+  [1m[36m (67.2ms)[0m  [1mCOMMIT[0m
+  Rendered houses/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 124ms (Views: 50.2ms | ActiveRecord: 68.0ms)
+
+
+Started GET "/houses" for 127.0.0.1 at 2015-08-15 20:42:53 +0200
+Processing by HousesController#index as HTML
+  [1m[35mHouse Load (0.3ms)[0m  SELECT "houses".* FROM "houses"
+  Rendered houses/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses" for 127.0.0.1 at 2015-08-15 20:42:53 +0200
+Processing by HousesController#index as HTML
+  [1m[36mHouse Load (0.2ms)[0m  [1mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.2ms)
