@@ -1,0 +1,13 @@
+<table class="table table-hover">
+  <tr>
+    <th>Name</th>
+    <th>House name</th>
+
+  </tr>
+
+  <% @rooms.each do |room| %>
+      <%= render 'room', {:house => House.find(room.house_id), :room => room} %>
+  <%end %>
+
+
+</table>

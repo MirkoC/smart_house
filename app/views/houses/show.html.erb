@@ -1,9 +1,15 @@
-<p>
-  <strong>Neme:</strong>
-  <%= @house.name %>
-</p>
+<table class="table table-hover">
+  <tr>
+    <th>Name</th>
+    <th>Street address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Region</th>
+    <th>Country</th>
+    <th>Postal code</th>
+  </tr>
 
-<p>
-  <strong>Street address:</strong>
-  <%= @house.street_address %>
-</p>
+  <%= render 'house', :house => @house %>
+
+
+</table>

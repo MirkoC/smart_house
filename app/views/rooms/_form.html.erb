@@ -1,0 +1,16 @@
+<%= form_for @room do |r| %>
+    <p>
+      <%= r.label :name %><br>
+      <%= r.text_field :name, class: 'form-control' %>
+    </p>
+
+
+    <p>
+      <%= r.label :house %><br>
+      <%= r.collection_select :house_id, @houses, :id, :name, {include_blank: true}, {class: 'btn btn-default'} %>
+    </p>
+
+    <p>
+      <%= r.submit 'Save', class: 'btn btn-primary' %>
+    </p>
+<% end %>
