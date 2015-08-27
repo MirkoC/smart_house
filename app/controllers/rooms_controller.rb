@@ -1,5 +1,7 @@
 class RoomsController < ApplicationController
 
+  protect_from_forgery
+
   def index
     @rooms = Room.all
   end
@@ -17,11 +19,22 @@ class RoomsController < ApplicationController
 
   def show
     @room = Room.find(params[:id])
+    @temperatures = Temperature.where(room_id: @room.id)
+    @doors = Door.where(room_id: @room.id)
+    @data = {}
+    @door_data = {}
+    @doors.map do |d|
+      @door_data[d.created_at] = d.value
+    end
+    @temperatures.map do |temp|
+      @data[temp.created_at] = temp.value
+    end
     @house = House.where(id: @room[:house_id]).take
   end
 
   def edit
     @room = Room.find(params[:id])
+    @house = House.order(@room.house_id)
   end
 
   def update

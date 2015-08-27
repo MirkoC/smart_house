@@ -1,5 +1,12 @@
 source 'https://rubygems.org'
 
+
+#rack-cors
+gem 'rack-cors'
+#groupdate
+gem 'groupdate'
+#chartkick
+gem 'chartkick'
 #bootstrap
 gem 'bootstrap-sass', '~> 3.3.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

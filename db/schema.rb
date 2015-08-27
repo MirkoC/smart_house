@@ -11,10 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150815122232) do
+ActiveRecord::Schema.define(version: 20150827190125) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "doors", force: :cascade do |t|
+    t.string   "value"
+    t.integer  "room_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "doors", ["room_id"], name: "index_doors_on_room_id", using: :btree
 
   create_table "houses", force: :cascade do |t|
     t.string   "name"
@@ -37,5 +46,16 @@ ActiveRecord::Schema.define(version: 20150815122232) do
 
   add_index "rooms", ["house_id"], name: "index_rooms_on_house_id", using: :btree
 
+  create_table "temperatures", force: :cascade do |t|
+    t.string   "value"
+    t.integer  "room_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "temperatures", ["room_id"], name: "index_temperatures_on_room_id", using: :btree
+
+  add_foreign_key "doors", "rooms"
   add_foreign_key "rooms", "houses"
+  add_foreign_key "temperatures", "rooms"
 end

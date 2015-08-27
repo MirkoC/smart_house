@@ -7,7 +7,7 @@
 
     <p>
       <%= r.label :house %><br>
-      <%= r.collection_select :house_id, @houses, :id, :name, {include_blank: true}, {class: 'btn btn-default'} %>
+      <%= r.collection_select :house_id, @house, :id, :name, {include_blank: true}, {class: 'btn btn-default'} %>
     </p>
 
     <p>

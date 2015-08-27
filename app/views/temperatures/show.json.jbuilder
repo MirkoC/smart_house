@@ -1,0 +1,1 @@
+json.(@temperature, :value, :room_id, :created_at)
