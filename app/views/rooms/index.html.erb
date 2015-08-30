@@ -6,7 +6,7 @@
   </tr>
 
   <% @rooms.each do |room| %>
-      <%= render 'room', {:house => House.find(room.house_id), :room => room} %>
+      <%= render 'room', :house => House.find(room.house_id), :room => room, :locals => {:labeled => 'Details'}  %>
   <%end %>
 
 

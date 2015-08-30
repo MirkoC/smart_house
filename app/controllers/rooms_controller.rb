@@ -3,17 +3,24 @@ class RoomsController < ApplicationController
   protect_from_forgery
 
   def index
-    @rooms = Room.all
+    ids = params[:format].split('/') if params[:format]
+    @rooms = Room.all if not params[:format]
+    @rooms = ids.map do |id|
+      Room.find_by_id(id)
+    end if params[:format]
   end
 
   def new
     @room = Room.new
-    @houses = House.order(:name)
+    @house = House.order(:name)
   end
 
   def create
     @room = Room.new(room_params)
     @room.save
+    @house = House.where(id: @room[:house_id]).take
+    @data = {}
+    @door_data = {}
     render :show
   end
 
@@ -40,6 +47,9 @@ class RoomsController < ApplicationController
   def update
     @room = Room.find(params[:id])
     @room.update(room_params)
+    @house = House.where(id: @room[:house_id]).take
+    @data = {}
+    @door_data = {}
     render :show
   end
 

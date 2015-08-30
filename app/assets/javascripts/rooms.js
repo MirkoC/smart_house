@@ -3,7 +3,6 @@ var port = '8080';
 
 
 function send_command(command) {
-    //$.post("http://" + server + ":" + port, "ovo je sranje", function (data) {console.log(data)}, "text")
     $.ajax({
         type: "POST",
         url: "http://" + server + ":" + port + "/heat=" + command,

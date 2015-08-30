@@ -9,7 +9,7 @@
     <th>Postal code</th>
   </tr>
 
-  <%= render 'house', :house => @house %>
+  <%= render 'house', :house => @house, :locals => {:path => rooms_path(Room.where(house_id: @house.id).each { |r| r.id})} %>
 
 
 </table>

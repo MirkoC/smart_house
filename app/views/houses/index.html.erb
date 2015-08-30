@@ -10,7 +10,7 @@
   </tr>
 
   <% @houses.each do |house| %>
-      <%= render 'house', :house => house %>
+      <%= render 'house', :house => house, :locals => {:path => house_path(house)} %>
   <%end %>
 
 
