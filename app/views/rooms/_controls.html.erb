@@ -1,16 +1,29 @@
 <div class="col-xs-12" style="height:25px;"></div>
 
 <div class="col-sm-12">
+  <button class="btn btn-warning btn-lg spc-btn" id="automatic" onclick="send_command(3)">
+    Automatic
+  </button>
+
   <div class="btn-group btn-group-lg" role="group">
     <button class="btn btn-success bnt-lg spc-btn" id="button" onclick="send_command(4)" >
-      On
+      Light On
     </button>
     <button class="btn btn-success bnt-lg" id="btn-off" onclick="send_command(5)">
-      Off
+      Light Off
     </button>
   </div>
 
-  <button class="btn btn-warning btn-lg spc-btn" id="automatic" onclick="send_command(3)">
-    Automatic
+  <div class="btn-group btn-group-lg" role="group">
+    <button class="btn btn-primary bnt-lg spc-btn" id="button" onclick="send_command(6)" >
+      Heat On
+    </button>
+    <button class="btn btn-primary bnt-lg" id="btn-off" onclick="send_command(7)">
+      Heat Off
+    </button>
+  </div>
+
+  <button class="btn btn-danger btn-lg spc-btn" id="automatic" onclick="send_command(8)">
+    System power off
   </button>
 </div>

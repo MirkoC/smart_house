@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :houses
   resources :rooms
+  resources :doors
 
 
   resources :temperatures, except: [:new, :edit]
